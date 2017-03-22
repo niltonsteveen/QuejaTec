@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">QuejaTec</string>
+    <string name="username">Nombre de usuario:</string>
 </resources>
