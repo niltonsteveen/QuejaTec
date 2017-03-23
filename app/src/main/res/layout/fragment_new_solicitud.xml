@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light3"
+    tools:context=".NewSolicitud">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/tvTipoSol"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tiposol"
+                android:textColor="@color/hint2"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+            <Spinner
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTipoSol"
+                android:id="@+id/spTipo"></Spinner>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/description"
+                android:textSize="20dp"
+                android:textColor="@color/hint2"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescripcion"
+                android:layout_below="@+id/spTipo" />
+            <EditText
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/etDescription"
+                android:layout_below="@id/tvDescripcion"
+                android:maxLines="8"
+                android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:id="@+id/tvSucursal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sucursal"
+                android:textColor="@color/hint2"
+                android:textSize="20dp"
+                android:layout_below="@id/etDescription"
+                android:textAlignment="center"/>
+            <Spinner
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSucursal"
+                android:id="@+id/spSucursal"
+                ></Spinner>
+
+            <Button
+                android:id="@+id/btnCrearSol"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear"
+                android:layout_below="@id/spSucursal"
+                android:backgroundTint="@color/accent"
+                android:textColor="@color/hint2"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,7 +1,7 @@
 <resources>
 
         <!-- Base application theme. -->
-        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
             <!-- Customize your theme here. -->
             <item name="colorPrimary">@color/primary</item>
             <item name="colorPrimaryDark">@color/primaryDark</item>
@@ -22,7 +22,11 @@
         </style>
 
         <style name="Hint" parent="TextAppearance.Design.Hint">
-            <item name="android:textColor">@color/orange</item>
+            <item name="android:textColor">@color/accent</item>
+        </style>
+
+        <style name="Hint2" parent="TextAppearance.Design.Hint">
+            <item name="android:textColor">@color/hint2</item>
         </style>
 
         <style name="Counter" parent="TextAppearance.Design.Counter">
